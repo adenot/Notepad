@@ -1,34 +1,34 @@
-title:            Notepad
-description:      "Blogging is fun"
+title:            Allan Denot
+description:      "Thoughts"
 logo:             logo.png
-disqus_shortname: hmfaysal
+disqus_shortname: adenot
 share:            true
-dropcap:			true
+dropcap:		      true
 # Change url to your domain. Leave localhost server or blank when working locally.
-# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	  /Notepad
+url:        	    ''
 
 # Owner/author information
 owner:
-  name:           Hossain Mohd Faysal
-  avatar:         hmfaysal.jpg
-  email:          hmfaysal@alum.mit.edu
+  name:           Allan Denot
+  avatar:         adenot.jpg
+  email:          allan@spikenode.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Awesome Life
+  description:    ''
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        hmfaysal
-  facebook:       hmfaysal
-  github:         hmfaysal      
-  instagram:      hmfaysal
+  twitter:        adenot
+  facebook:       allandenot
+  github:         adenot
+  instagram:      ''
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/102602916593522619858
+  google_plus:    ''
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-39365944-7
-google_verify:      
+google_analytics:  ''
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # Links to include in footer navigation
 # For external links add external: true
@@ -45,7 +45,7 @@ links:
     url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Dhaka
+timezone:    Australia/Sydney
 future:      true
 highlighter: pygments
 markdown:    kramdown
@@ -63,7 +63,7 @@ kramdown:
   use_coderay: false
 
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
@@ -71,8 +71,8 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://hmfaysal.github.io/Notepad/'
-  relativeLinks: 'http://hmfaysal.github.io/Notepad/links.jsonp'
+  siteurl: 'http://adenot.github.io/'
+  relativeLinks: 'http://adenot.github.io/links.jsonp'
   media: 'images'
   metadata:
     _posts:
