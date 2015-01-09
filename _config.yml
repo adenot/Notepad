@@ -20,9 +20,6 @@ owner:
   twitter:        adenot
   facebook:       allandenot
   github:         adenot
-  instagram:      ''
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    ''
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:  ''
@@ -115,16 +112,12 @@ prose:
           options:
             - name: "Personal"
               value: personal
-            - name: "Engineering"
-              value: engineering
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
             - name: "Interesting"
               value: interesting
-            - name: "Web-Development"
-              value: webdevelopment
+            - name: "DevOps"
+              value: devops
+            - name: "Startups"
+              value: startups
           alterable: true
       - name: "tags"
         field:
