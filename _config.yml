@@ -13,11 +13,11 @@ dropcap:		      true
 owner:
   name:           Allan Denot
   avatar:         adenot.jpg
-  email:          allan@spikenode.com
+  email:          adenot at gmail
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    ''
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        adenot
+  twitter:        denot
   facebook:       allandenot
   github:         adenot
 
@@ -116,6 +116,8 @@ prose:
               value: interesting
             - name: "DevOps"
               value: devops
+            - name: "Development"
+              value: development
             - name: "Startups"
               value: startups
           alterable: true
