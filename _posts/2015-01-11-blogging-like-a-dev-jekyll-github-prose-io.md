@@ -21,10 +21,16 @@ Summary of benefits:
 The easiest way to do is to fork a jekyll theme in your GitHub account. Best ones I could find are:
 - [Notepad](https://github.com/hmfaysal/Notepad) - used by this very blog
 - [Clean Blog theme by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)
+- More themes in [http://jekyllthemes.org/](http://jekyllthemes.org/)
+
+*This tutorial will install and customize the Notepad theme, but instructions should be similar for other themes*
+
+After forking, click on Settings:
 
 ![howtoblog-githubsettings.png](/images/howtoblog-githubsettings.png)
 
-Rename your forked repository to _yourusername_.github.io, so GitHub Pages get in action.
+- Rename your forked repository to _yourusername_.github.io, that's the way to tell GitHub Pages to build your repository into a website.
+- Set the Default branch to **master**, unless described otherwise by theme developer.
 
 **Some theme repositories use gh-pages as the default branch and others use master. You must check in the theme docs which one is correct. For Notepad is master.**
 
@@ -69,20 +75,38 @@ Prose.io is basically an in browser markdown editor connected to GitHub. To setu
 
 ![howtoblog-proseioproject.png](/images/howtoblog-proseioproject.png)
 
-If the file \_custom.yml is configured correctly, you will only see the files inside \_posts folder. 
+If the file \_custom.yml is configured correctly, you will only see the files inside \_posts folder. Otherwise, just browse to the \_posts folder, there should be some examples there.
+
+![howtoblog-proseioposts.png](/images/howtoblog-proseioposts.png)
 
 Simply click *Edit* and the markdown file will be open for editing. Saving from prose.io will modify your github repository so there's no need to locally clone the repository after everything is setup.
+
+![howtoblog-proseiopostedit.png](/images/howtoblog-proseiopostedit.png)
 
 # Customizing your blog
 That's when we will need the cloned repository in your dev machine.
 
-Start by editing the file \_config.yml.
+## Config file
 
-You will need to check item by item and replace with the information you want for your blog.
+Edit the file \_config.yml.
 
-You can also have an item called *prose* with information that prose.io will use to help you edit your posts. Notepad theme has done this greatly, you can copy from [their \_config.yml file](https://github.com/hmfaysal/Notepad/blob/gh-pages/_config.yml#L72) if your theme of choice doesn't have those instructions.
+That's the boring part, you will need to check item by item and replace with the information you want for your blog. 
 
+**Protip:** You can also have an item called *prose* with information that prose.io will use to help you edit your posts. Notepad theme has done this greatly, as you can see in [their \_config.yml file](https://github.com/hmfaysal/Notepad/blob/gh-pages/_config.yml#L72). More information can be found on [Prose.io Getting Started page](https://github.com/prose/prose/wiki/Getting-Started).
 
+## HTML/CSS
+
+- \_layouts/\*.html - page layouts
+- \_includes - page exerpts used in the layout
+- assets/css/style.css - add your custom CSS here
+
+## Cleaning up
+
+If you are using Notepad theme, you will notice there are 2 branches: gh-pages and master. Unless you are using [GitHub Pages for a project page](https://help.github.com/articles/user-organization-and-project-pages/#project-pages), I recommend removing the gh-pages branch, it can be done by running:
+
+    git push origin :gh-pages   # deletes remote branch gh-pages
+    
+Again for Notepad theme, you can safely delete images from the *images* folder, and replace the logo.png with your own.
 
     
 
