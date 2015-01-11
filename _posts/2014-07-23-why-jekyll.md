@@ -1,16 +1,20 @@
 ---
 layout: post
 title: "Why Jekyll?"
-description: 
-headline: 
-modified: 2014-07-23
+description: null
+headline: null
+modified: 
+  - 2014-07-23T00:00:00.000Z
+  - "Wed Jul 23 2014 10:00:00 GMT+1000 (AUS Eastern Standard Time)"
 category: webdevelopment
-tags: [jekyll]
-imagefeature: 
-mathjax: 
-chart: 
+tags: 
+  - jekyll
+imagefeature: null
+mathjax: false
+chart: null
 comments: true
 featured: true
+published: false
 ---
 
 Well, I guess it's quite obvious that I really enjoy working with Jekyll — with good reasons — so let me just briefly suggest some of the benefits of using a static site generator in favor of a heavy dynamic, database driven content management system.
