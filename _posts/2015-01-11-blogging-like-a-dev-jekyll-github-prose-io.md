@@ -26,6 +26,8 @@ The easiest way to do is to fork a jekyll theme in your GitHub account. Best one
 
 Rename your forked repository to _yourusername_.github.io, so GitHub Pages get in action.
 
+**Some theme repositories use gh-pages as the default branch and others use master. You must check in the theme docs which one is correct. For Notepad is master.**
+
 ## Step 2: Preparing your environment
 Requirements are: Ruby, Gem and GIT.
 From there you can install jekyll by running:
@@ -47,3 +49,10 @@ _replace adenot with your github username_
 Now run your blog locally with:
 
     jekyll serve
+    
+If all goes right, you should see the following page:
+![howtoblog-notepadinitial.png](/images/howtoblog-notepadinitial.png)
+
+
+    
+
