@@ -1,0 +1,12 @@
+.notepad-blog-logo {
+  height: 5rem;
+  padding: 1.625rem;
+  background-color: #1cb28b;
+}
+.notepad-blog-logo > h1 {
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+
+}
