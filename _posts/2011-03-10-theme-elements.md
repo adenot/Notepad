@@ -5,13 +5,14 @@ description: "Just about everything you'll need to style in the theme: headings,
 modified: 
   - 2013-05-31T00:00:00.000Z
   - "Fri May 31 2013 10:00:00 GMT+1000 (AUS Eastern Standard Time)"
+  - "Fri May 31 2013 10:00:00 GMT+1000 (AEST),Fri May 31 2013 10:00:00 GMT+1000 (AUS Eastern Standard Time)"
 category: articles
 tags: 
   - sample post
 imagefeature: cover6.jpg
 comments: true
 share: true
-published: true
+published: false
 mathjax: false
 featured: false
 ---
