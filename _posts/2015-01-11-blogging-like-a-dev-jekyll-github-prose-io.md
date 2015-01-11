@@ -39,7 +39,9 @@ Optionally you can create a blank site, by following [jekyll documentation](http
 ## Step 3: Cloning your repository
 If you forked correctly, you will have a repository on github.com/_yourusername_/_yourusername_.github.io
 
-Clone it in your dev machine:
+*It's not necessary to clone the repository, but depending how much you will need to customize, it's much easier to do from your local filesystem. Also, some themes (such as Notepad) ships with a lot of unecessary files that you need to cleanup. This will be described in the Customize section below.*
+
+Cloning it in your dev machine:
 
     git clone git@github.com:adenot/adenot.github.io.git
     cd adenot.github.io
@@ -51,7 +53,35 @@ Now run your blog locally with:
     jekyll serve
     
 If all goes right, you should see the following page:
+
 ![howtoblog-notepadinitial.png](/images/howtoblog-notepadinitial.png)
+
+Your blogging platform is now running. Let's learn how to edit posts and customize it.
+
+---
+
+# Editing with Prose.io
+Prose.io is basically an in browser markdown editor connected to GitHub. To setup:
+
+1. Go to [prose.io](http://prose.io/)
+2. Authorize
+3. Select the project
+
+![howtoblog-proseioproject.png](/images/howtoblog-proseioproject.png)
+
+If the file \_custom.yml is configured correctly, you will only see the files inside \_posts folder. 
+
+Simply click *Edit* and the markdown file will be open for editing. Saving from prose.io will modify your github repository so there's no need to locally clone the repository after everything is setup.
+
+# Customizing your blog
+That's when we will need the cloned repository in your dev machine.
+
+Start by editing the file \_config.yml.
+
+You will need to check item by item and replace with the information you want for your blog.
+
+You can also have an item called *prose* with information that prose.io will use to help you edit your posts. Notepad theme has done this greatly, you can copy from [their \_config.yml file](https://github.com/hmfaysal/Notepad/blob/gh-pages/_config.yml#L72) if your theme of choice doesn't have those instructions.
+
 
 
     
