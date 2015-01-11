@@ -2,12 +2,18 @@
 layout: post
 title: Theme Elements
 description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-modified: 2013-05-31
+modified: 
+  - 2013-05-31T00:00:00.000Z
+  - "Fri May 31 2013 10:00:00 GMT+1000 (AUS Eastern Standard Time)"
 category: articles
-tags: [sample post]
+tags: 
+  - sample post
 imagefeature: cover6.jpg
 comments: true
 share: true
+published: true
+mathjax: false
+featured: false
 ---
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
