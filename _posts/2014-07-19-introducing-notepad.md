@@ -1,14 +1,18 @@
 ---
 layout: post
-title: "Introducing Notepad"
-description: 
-headline: 
-modified: 2014-07-19
+title: Introducing Notepad
+description: null
+headline: null
+modified: 
+  - 2014-07-19T00:00:00.000Z
+  - "Sat Jul 19 2014 10:00:00 GMT+1000 (AUS Eastern Standard Time)"
 category: personal
 tags: []
 imagefeature: cover1.jpg
 comments: true
-mathjax: 
+mathjax: false
+published: false
+featured: false
 ---
 
 Notepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
