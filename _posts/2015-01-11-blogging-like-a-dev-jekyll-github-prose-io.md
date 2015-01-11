@@ -3,13 +3,18 @@ layout: post
 published: true
 title: "Blogging like a dev: Jekyll + GitHub + Prose.io"
 mathjax: false
-featured: false
-comments: false
+featured: true
+comments: true
+modified: "2015-01-11"
+categories: 
+  - Development
+tags: blog github markdown
 ---
 
-You want a blog that is fully customizable and is sick of WordPress mess and insecurity? One solution that I found is to use Jekyll to build a blog where all posts are in markdown format, is hosted in github and I can edit using a browser with prose.io.
+You want a blog that is fully customizable and is sick of WordPress mess and insecurity? One solution is to use Jekyll to build a blog where all posts are in markdown format, is hosted in github and I can edit using a browser with prose.io.
 
 Summary of benefits:
+
 - No database, only Markdown files
 - Hosted for free by GitHub Pages
 - Version controlled
@@ -19,6 +24,7 @@ Summary of benefits:
 
 ## Step 1: Forking from another blog
 The easiest way to do is to fork a jekyll theme in your GitHub account. Best ones I could find are:
+
 - [Notepad](https://github.com/hmfaysal/Notepad) - used by this very blog
 - [Clean Blog theme by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)
 - More themes in [http://jekyllthemes.org/](http://jekyllthemes.org/)
