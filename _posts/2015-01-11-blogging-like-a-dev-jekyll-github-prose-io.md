@@ -23,7 +23,11 @@ The easiest way to do is to fork a jekyll theme in your GitHub account. Best one
 - [Clean Blog theme by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)
 - More themes in [http://jekyllthemes.org/](http://jekyllthemes.org/)
 
+---
+
 *This tutorial will install and customize the Notepad theme, but instructions should be similar for other themes*
+
+---
 
 After forking, click on Settings:
 
@@ -92,12 +96,17 @@ Edit the file \_config.yml.
 
 That's the boring part, you will need to check item by item and replace with the information you want for your blog. 
 
-**Protip:** You can also have an item called *prose* with information that prose.io will use to help you edit your posts. Notepad theme has done this greatly, as you can see in [their \_config.yml file](https://github.com/hmfaysal/Notepad/blob/gh-pages/_config.yml#L72). More information can be found on [Prose.io Getting Started page](https://github.com/prose/prose/wiki/Getting-Started).
+**Protip:** You can also have an item called *prose* with information that prose.io will use to help you edit your posts. Notepad theme has done this greatly, as you can see in [their  original \_config.yml file](https://github.com/hmfaysal/Notepad/blob/gh-pages/_config.yml#L72). More information can be found on [Prose.io Getting Started page](https://github.com/prose/prose/wiki/Getting-Started).
+
+---
+**If for some reason GitHub fails to build Jekyll, it will send an email to you informing that. So check your email if your page are not being updated after you pushed changes.**
+---
 
 ## HTML/CSS
+Locations for customizing HTML/CSS:
 
 - \_layouts/\*.html - page layouts
-- \_includes - page exerpts used in the layout
+- \_includes/\*.html - page exerpts used in the layout
 - assets/css/style.css - add your custom CSS here
 
 ## Cleaning up
