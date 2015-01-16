@@ -5,6 +5,7 @@ title: About Allan
 tags: []
 imagefeature: fourseasons.jpg
 chart: true
+published: true
 ---
 
 From publishing software to the cloud, I started in 2001 by releasing a Linux distribution in Brazil, built 2 more products, co-founded a company, migrated to Australia, got a master’s degree, got married, became a DevOps engineer and now co-founder of SpikeNode.com.
@@ -24,9 +25,9 @@ From publishing software to the cloud, I started in 2001 by releasing a Linux di
 
 ###9 to 5
 
-- Security Engineer at Real Protect
-- Software/DevOps Engineer at Suncorp Group
-- DevOps Engineer at Cammy
+- Security Engineer at [Real Protect](http://www.realprotect.net/)
+- Software/DevOps Engineer at [Suncorp Group](http://www.suncorpgroup.com/)
+- DevOps Engineer at [Cammy](http://www.cammy.com/)
 
 ###Entrepreneurship
 
@@ -36,7 +37,7 @@ From publishing software to the cloud, I started in 2001 by releasing a Linux di
     Developed NeoLinux and Netunne there.<br>
 
   </li>
-  <li><b>Co-founder of SpikeNode</b><br>
+  <li><b>Co-founder of [SpikeNode](http://www.spikenode.com/)</b><br>
     My next big thing.<br>
   </li>
 </ul>
