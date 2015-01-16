@@ -37,7 +37,7 @@ From publishing software to the cloud, I started in 2001 by releasing a Linux di
     Developed NeoLinux and Netunne there.<br>
 
   </li>
-  <li><b>Co-founder of [SpikeNode](http://www.spikenode.com/)</b><br>
+  <li><b>Co-founder of <a href="http://www.spikenode.com">SpikeNode</a></b><br>
     My next big thing.<br>
   </li>
 </ul>
