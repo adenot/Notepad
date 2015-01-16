@@ -43,8 +43,39 @@ Next time you run your playbook, simply add *-i inventory*:
 And that's it to start. 
 Now the fun part.
 
-## Dynamic and static inventory files together
+## Dynamic and static inventories together
 
 Here's the trick, add both your static and dynamic inventories to the folder and you can run playbooks targeting both as same time.
 
-#### Example
+#### Example: Group EC2 hosts by country
+
+EC2 hosts from both us-east-1 and us-west-1 need to belong to a **USA** group, and both eu-west-1 and eu-central-1 to belong to **Europe** group.
+
+Add your *ec2.py* to the inventory folder and make sure it's executable.
+
+    cp /usr/local/lib/python2.7/dist-packages/ansible/module_utils/ec2.py inventory/
+    chmod +x inventory/ec2.py
+
+*[Check ansible documentation for help to setup ec2.py](http://docs.ansible.com/intro_dynamic_inventory.html#example-aws-ec2-external-inventory-script)*
+
+Create new file *contries* and add to inventory folder.
+
+    touch inventory/countries
+    
+*contries* file contents:
+
+    [USA:children]
+    us-east-1
+    us-west-1
+    
+    [Europe:children]
+    eu-west-1
+    eu-central-1
+    
+Now when you run:
+
+    ansible-playbook -i inventory --limit "Europe" my_playbook.yml
+    
+Will run *my_playbook.yml* only to your european servers.
+
+
