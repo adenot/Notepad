@@ -3,7 +3,7 @@ description:      "Thoughts"
 logo:             logo.png
 disqus_shortname: adenot
 share:            true
-dropcap:		      true
+dropcap:		  true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
@@ -15,7 +15,7 @@ owner:
   avatar:         adenot.jpg
   email:          adenot at gmail
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    ''
+  description:    'From publishing software to the cloud, I started in 2001 by releasing a Linux distribution in Brazil, built 2 more products, co-founded a company, migrated to Australia, got a master’s degree, got married, became a DevOps engineer and now co-founder of SpikeNode.com.'
   # Social networking links used in footer. Update and remove as you like.
   twitter:        denot
   facebook:       allandenot
@@ -38,7 +38,7 @@ links:
     url: /featured
   - title: Categories
     url: /categories
-  - title: About
+  - title: About Allan
     url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -50,7 +50,7 @@ paginate:    5
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+permalink:   date
 
 kramdown:
   auto_ids: true

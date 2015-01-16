@@ -521,7 +521,7 @@ html, body, .notepad-post-container, .notepad-post-header {
   .page-template .row p {
     margin: 0 auto 2em auto !important;
     max-width: 56.25rem !important;
-    font-size: 1.125rem !important; }
+    font-size: 1.0rem !important; }
   @media only screen and (min-width: 58.125em) {
     .post-template .row,
     .page-template .row {
