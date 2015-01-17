@@ -58,12 +58,17 @@ Add your *ec2.py* to the inventory folder and make sure it's executable.
 
 *[Check ansible documentation for help to setup ec2.py](http://docs.ansible.com/intro_dynamic_inventory.html#example-aws-ec2-external-inventory-script)*
 
-Create new file *contries* and add to inventory folder.
+Create new file *countries* and add to inventory folder.
 
     touch inventory/countries
     
-*contries* file contents:
+*countries* file contents:
 
+    # Declaring country groups
+    [USA]
+    [Europe]
+    
+    # Attaching EC2 groups as children
     [USA:children]
     us-east-1
     us-west-1
@@ -77,5 +82,3 @@ Now when you run:
     ansible-playbook -i inventory --limit "Europe" my_playbook.yml
     
 Will run *my_playbook.yml* only to your european servers.
-
-
