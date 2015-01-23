@@ -82,7 +82,7 @@ To run the role from a playbook, in this example, a webserver:
     provision-webserver.yml:
 ---
 {% raw %}
-````yaml
+``` yaml
 ---
  - hosts: localhost
    connection: local
@@ -116,7 +116,7 @@ To run the role from a playbook, in this example, a webserver:
            volume_size: "{{ ec2_volume_size }}"
            delete_on_termination: true
       register: ec2
-````
+```
 {% endraw %}
 
 ## Running Playbooks on just created EC2 hosts
