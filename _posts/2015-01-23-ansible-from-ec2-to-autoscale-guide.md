@@ -1,14 +1,16 @@
 ---
 layout: post
-published: false
+published: true
 title: "Ansible with AWS: from EC2 to Autoscale"
 mathjax: false
-featured: true
+featured: false
 comments: false
 categories: 
   - devops
 tags: ec2 aws cloudwatch autoscaling ansible
 ---
+
+**ATTENTION: THIS ARTICLE STILL BEING WRITTEN.**
 
 ## Intro
 
