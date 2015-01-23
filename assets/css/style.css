@@ -585,7 +585,7 @@ figcaption {
 .highlight .nx { color: #000000} /* Name.Other */
 .highlight .py { color: #000000} /* Name.Property */
 .highlight .nt { color: #F06F00; font-weight: bold} /* Name.Tag */
-.highlight .nv { color: #8a2be2; text-decoration: underline} /* Name.Variable */
+.highlight .nv { color: #8a2be2; } /* Name.Variable */
 .highlight .ow { color: #000000} /* Operator.Word */
 .highlight .w { color: #000000} /* Text.Whitespace */
 .highlight .mf { color: #00C226; text-decoration: underline} /* Literal.Number.Float */
