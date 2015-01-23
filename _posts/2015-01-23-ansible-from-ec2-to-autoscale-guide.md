@@ -81,43 +81,40 @@ The generic role I use to create EC2 hosts is:
 To run the role from a playbook, in this example, a webserver:
     provision-webserver.yml:
 ---
-{% raw %}
-```yaml
----
- - hosts: localhost
-   connection: local
-   gather_facts: false
-   vars:
-     - ec2_keypair: "XX-KEYPAIR-NAME-XX" # To be replaced
-     - ec2_security_group: "sg-XXXXXXXX" # To be replaced
-     - ec2_instance_type: "t2.micro"
-     - ec2_image: "ami-1711732d"    # Ubuntu 14.04
-     - ec2_subnet_ids: [ 'subnet-XXXXXXXX', 'subnet-XXXXXXXX' ] # To be replaced
-     - ec2_region: "ap-southeast-2" # or us-east-1 for Virginia US
-     - ec2_tag_Name: "Webserver"    # Tag Name
-     - ec2_volume_size: "8"         # Size in GB
-   tasks:
-    - name: Provision EC2 Box
-      local_action:
-        module: ec2
-        key_name: "{{ ec2_keypair }}"
-        group_id: "{{ ec2_security_group }}"
-        instance_type: "{{ ec2_instance_type }}"
-        image: "{{ ec2_image }}"
-        vpc_subnet_id: "{{ ec2_subnet_ids|random }}"
-        region: "{{ ec2_region }}"
-        instance_tags: '{"Name":"{{ec2_tag_Name}}"}'
-        assign_public_ip: yes
-        wait: true
-        count: 1
-        volumes:
-         - device_name: /dev/sda1
-           device_type: gp2
-           volume_size: "{{ ec2_volume_size }}"
-           delete_on_termination: true
-      register: ec2
-```
-{% endraw %}
+    ---
+     - hosts: localhost
+       connection: local
+       gather_facts: false
+       vars:
+         - ec2_keypair: "XX-KEYPAIR-NAME-XX" # To be replaced
+         - ec2_security_group: "sg-XXXXXXXX" # To be replaced
+         - ec2_instance_type: "t2.micro"
+         - ec2_image: "ami-1711732d"    # Ubuntu 14.04
+         - ec2_subnet_ids: [ 'subnet-XXXXXXXX', 'subnet-XXXXXXXX' ] # To be replaced
+         - ec2_region: "ap-southeast-2" # or us-east-1 for Virginia US
+         - ec2_tag_Name: "Webserver"    # Tag Name
+         - ec2_volume_size: "8"         # Size in GB
+       tasks:
+        - name: Provision EC2 Box
+          local_action:
+            module: ec2
+            key_name: "{{ ec2_keypair }}"
+            group_id: "{{ ec2_security_group }}"
+            instance_type: "{{ ec2_instance_type }}"
+            image: "{{ ec2_image }}"
+            vpc_subnet_id: "{{ ec2_subnet_ids|random }}"
+            region: "{{ ec2_region }}"
+            instance_tags: '{"Name":"{{ec2_tag_Name}}"}'
+            assign_public_ip: yes
+            wait: true
+            count: 1
+            volumes:
+             - device_name: /dev/sda1
+               device_type: gp2
+               volume_size: "{{ ec2_volume_size }}"
+               delete_on_termination: true
+          register: ec2
+{:lang="yaml"}
 
 ## Running Playbooks on just created EC2 hosts
 
