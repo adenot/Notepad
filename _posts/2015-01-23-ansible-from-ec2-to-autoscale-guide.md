@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: "Ansible with AWS: from EC2 to Autoscale"
 mathjax: false
 featured: false
