@@ -82,7 +82,7 @@ To run the role from a playbook, in this example, a webserver:
     provision-webserver.yml:
 ---
 {% raw %}
-``` yaml
+```yaml
 ---
  - hosts: localhost
    connection: local
