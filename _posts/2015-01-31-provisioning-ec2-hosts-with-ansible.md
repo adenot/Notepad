@@ -83,7 +83,48 @@ ec2-vars/webservers.yml:
 
 {% highlight yaml %}
 {% raw %}
-
-
+ec2_keypair: "REDACTED"
+ec2_security_group: "REDACTED"
+ec2_instance_type: "m3.medium"
+ec2_image: "ami-9eaa1cf6"
+ec2_subnet_ids: ['subnet-REDACTED','subnet-REDACTED','subnet-REDACTED']
+ec2_region: "us-east-1"
+ec2_tag_Name: "Webserver"
+ec2_tag_Type: "webserver"
+ec2_tag_Environment: "production"
+ec2_volume_size: 16
 {% endraw %}
 {% endhighlight %}
+
+Change the **REDACTED** values above to your AWS account ones. You can easily find by inspecting a EC2 host (using AWS console) that you want to automate it's provisioning.
+
+You can have multiple variable files, one for each type of EC2 host.
+
+## Playbook
+
+Create a playbook inside ansible playbooks root folder called *provision-ec2.yml*, with the contents:
+
+{% highlight yaml %}
+{% raw %}
+---
+ - hosts: localhost
+   connection: local
+   gather_facts: false
+   user: root
+   pre_tasks:
+    - include_vars: ec2_vars/{{type}}.yml
+   roles:
+    - provision-ec2 
+{% endraw %}
+{% endhighlight %}
+
+Notice that the *{{type}}* variable above is not defined. Depending on the value of the parameter, Ansible will include different a variables file, thus populating the parameters used in the *provision-ec2* role.
+
+The type will be defined at run time.
+
+## Running
+
+Call *ansible-playbook* passing the *type* parameter as an argument:
+
+    ansible-playbook -vv -e "type=webservers" provision-ec2.yml
+    
