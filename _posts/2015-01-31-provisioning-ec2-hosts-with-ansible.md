@@ -21,6 +21,23 @@ The solution is organized in 3 parts:
 
 All code is in a GitHub repository: https://github.com/adenot/ansible-blog-provision-ec2
 
+## Setup Environment
+
+Ansible's EC2 module uses python-boto library to call AWS API, and boto needs AWS credentials in order to function.
+
+There are many ways to set your AWS credentials. One of them is to create a file under your user home folder:
+
+    touch ~/.boto
+
+Then edit the file and add the following:
+
+    [Credentials]
+    aws_access_key_id = REDACTED
+    aws_secret_access_key = REDACTED
+
+For more information, [check Boto documentation](http://boto.readthedocs.org/en/latest/boto_config_tut.html).
+To learn how to create AWS credentials, [check this documentation](http://docs.aws.amazon.com/IAM/latest/UserGuide/ManagingCredentials.html#Using_CreateAccessKey).
+
 ## Ansible Role
 
 Create a folder for the role:
@@ -128,3 +145,5 @@ Call *ansible-playbook* passing the *type* parameter as an argument:
 
     ansible-playbook -vv -e "type=webservers" provision-ec2.yml
     
+If your variables are correct, you should see this output:
+
