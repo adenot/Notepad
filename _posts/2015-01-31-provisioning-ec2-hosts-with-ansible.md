@@ -23,6 +23,11 @@ All code is in a GitHub repository: https://github.com/adenot/ansible-blog-provi
 
 ## Ansible Role
 
+Create a folder for the role:
+    mkdir -p roles/provision-ec2/tasks
+
+Name the file below as *main.yml* and add to the folder *roles/provision-ec2/tasks/main.yml*
+
 {% highlight yaml %}
 {% raw %}
 ---
@@ -61,6 +66,24 @@ All code is in a GitHub repository: https://github.com/adenot/ansible-blog-provi
  - name: Wait for the instances to boot by checking the ssh port
    wait_for: host={{item.public_ip}} port=22 delay=60 timeout=320 state=started
    with_items: ec2.instances
+
+{% endraw %}
+{% endhighlight %}
+
+## Variables Files
+
+These are YAML files that will be included by the playbook before calling the role above. It needs to fill all variables used in the *provision-ec2* role otherwise it will fail.
+
+Create a folder for the variables:
+    mkdir ec2-vars
+    
+In this example we will have a webservers.yml file to simulate provisioning a webserver host in AWS.
+
+ec2-vars/webservers.yml:
+
+{% highlight yaml %}
+{% raw %}
+
 
 {% endraw %}
 {% endhighlight %}
