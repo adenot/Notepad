@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Provisioning EC2 Hosts with Ansible
 mathjax: false
 featured: false
@@ -19,7 +19,8 @@ The solution is organized in 3 parts:
 2. Yaml files with variables that will be used as parameters for each type of EC2 host
 3. Playbook that combines the variables file with the role
 
-All code is in a GitHub repository: https://github.com/adenot/ansible-blog-provision-ec2
+All code is in a GitHub repository: [https://github.com/adenot/blog-ansible-provision-ec2](https://github.com/adenot/blog-ansible-provision-ec2)
+
 
 ## Setup Environment
 
@@ -143,7 +144,13 @@ The type will be defined at run time.
 
 Call *ansible-playbook* passing the *type* parameter as an argument:
 
-    ansible-playbook -vv -e "type=webservers" provision-ec2.yml
+    ansible-playbook -vv -i localhost, -e "type=webservers" provision-ec2.yml
     
-If your variables are correct, you should see this output:
+If your variables are correct, you should see a new host at your AWS console.
+
+## GitHub
+
+All code is available at:
+
+[https://github.com/adenot/blog-ansible-provision-ec2](https://github.com/adenot/blog-ansible-provision-ec2)
 
