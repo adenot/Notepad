@@ -20,11 +20,13 @@ Quit my job for almost 2 weeks now, and since the start of this year I've been s
 My [product](http://www.spikenode.com) is a hard one to design, it's something different from what's in the market so every decision I have to make is completely based on my experiences and biases, which are prone to mistakes.
 
 Problems that bug me:
+
 - Not sure if choosing nodejs/mongo was the best choice. It did take me out of my confort zone (python, php, laravel, mysql, pgsql) and has been painful sometimes, but so far I haven't encounter anything I couldn't do, so the light is still green.
 - Interface design/UI - I'm not a designer but I can do things that doesn't look too bad. The problem is that it takes me too much time to iterate over the design until I reach something I like. I wish I could just get it right at the first attempt.
 - What to cut? - As a lean startup, the biggest challenge is to cut features otherwise it will never launch.
 
 Things I'm happy with:
+
 - The product is simple, hopefully it won't need much time for our users to learn
 - The product is slowly looking better. I think it's important that people enjoy using it so UI is a bit priority for me.
 - My wife's support. Yes, that's very important!
