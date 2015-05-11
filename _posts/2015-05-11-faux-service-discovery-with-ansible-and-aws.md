@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Faux Service Discovery with Ansible and AWS
 mathjax: false
 featured: false
