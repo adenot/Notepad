@@ -74,7 +74,7 @@ listen appname 0.0.0.0:80
 {% endraw %}
 {% endhighlight %}
 
-Note the section with {% for item in groups['tag_Type_webserver'] %} that will loop through the group of servers with Type=webserver EC2 tag before and write the configuration file with each server found as a entry at haproxy.cfg.
+Note the section with {% raw %}{% for item in groups['tag_Type_webserver'] %}{% endraw %} that will loop through the group of servers with Type=webserver EC2 tag before and write the configuration file with each server found as a entry at haproxy.cfg.
 
 ## Wrapping Up
 
