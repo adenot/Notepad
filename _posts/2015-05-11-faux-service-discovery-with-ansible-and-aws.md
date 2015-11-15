@@ -4,10 +4,16 @@ published: true
 title: Faux Service Discovery with Ansible and AWS
 mathjax: false
 featured: false
-comments: false
+comments: true
 categories: 
   - devops
+description: ""
+headline: ""
+modified: ""
+tags: ""
+imagefeature: ""
 ---
+
 
 In a dynamic environment, servers are created and destroyed all the time. When a new server comes to life, depending on its purpose, you might need to update configuration files from other servers to tell how to access it.
 A simple example would be updating your load balancer configuration by adding a new webserver or removing a webserver that was destroyed.
