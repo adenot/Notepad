@@ -27,15 +27,14 @@ User runs Ansible playbook:
 
 ![blog-ansible-autoscaling-wordpress.png]({{site.baseurl}}/images/blog-ansible-autoscaling-wordpress.png)
 
-Baking server exists as a template for the AMI that will be used in CloudFormation.
-
-Baking server is an Ubuntu with Ansible and local playbooks are copied into it.
-
-We choose to use baked AMIs to speedup the bootup process when autoscaling is creating new instances. Upon boot, these instances run their local Ansible playbooks and the webserver is configured.
+Notes:
+- Baking server exists as a template for the AMI that will be used in CloudFormation.
+- Baking server is an Ubuntu with Ansible and local playbooks are copied into it.
+- We choose to use baked AMIs to speedup the bootup process when autoscaling is creating new instances. Upon boot, these instances run their local Ansible playbooks and the webserver is configured.
 
 ## How can I use it
 
-Fork my repository: [https://github.com/adenot/blog-ansible-autoscaling-wordpress]
+Fork my repository: [https://github.com/adenot/blog-ansible-autoscaling-wordpress](https://github.com/adenot/blog-ansible-autoscaling-wordpress)
 
 Edit file:
 
@@ -50,14 +49,12 @@ Running:
 ### What is happening?
 
 First time it runs:
-
 - a baking server is created
 - local playbooks are copied into baking server (from local_wordpress/ansible)
 - an AMI is created from the baking server
 - a CloudFormation stack is created
 
 Second time it runs:
-
 - local playbooks are copied into baking server (from local_wordpress/ansible)
 - an AMI is created from the baking server
 - CloudFormation stack is updated with new AMI
