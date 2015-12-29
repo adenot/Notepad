@@ -28,6 +28,7 @@ From publishing software to the cloud, I started in 2001 by releasing a Linux di
 - Security Engineer at [Real Protect](http://www.realprotect.net/)
 - Software/DevOps Engineer at [Suncorp Group](http://www.suncorpgroup.com/)
 - DevOps Engineer at [Cammy](http://www.cammy.com/)
+- Senior DevOps Engineer at [Odecee](http://www.odecee.com.au)
 
 ###Entrepreneurship
 
