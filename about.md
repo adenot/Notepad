@@ -18,6 +18,8 @@ From publishing software to the cloud, I started in 2001 by releasing a Linux di
 
 *Netunne* was also a software layer over Linux but more sophisticated and focused on small ISPs that need a gateway/router to control their customer’s access to the internet.
 
+*Spikenode* is a cloud deployment tool that allows business to deploy their web applications in a completely automated way, into multiple environments (including production) while keeping total control, by using their own cloud.
+
 ###Academic achievements
 
 - Bacharel degree in Information Systems from PUC-Rio
