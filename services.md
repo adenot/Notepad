@@ -56,4 +56,4 @@ Sometimes things go wrong. Upon alerted I will make sure your services are back 
 
 I can guarantee that will cost less than half salary of a full-time DevOps Engineer.
 
-Contact me and let's talk.
+Reach me at hello@allandenot.com and let's talk.
