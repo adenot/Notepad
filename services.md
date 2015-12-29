@@ -22,15 +22,19 @@ You have a feeling that you are running more servers than you really need?
 
 No strings attached. You tell me what you want to achieve and I'll try to help.
 
+---
+
 2⋅ **Optimize Servers**
 
 Once we have a deal, I'll check your servers for vulnerabilities, performance and possible bottlenecks and problems.
 
+---
 
 3⋅ **Setup Automation** 
 
 I will make sure your infrastructure can be regenerated with a click of a button. I use Ansible and CloudFormation to achieve this.
 
+---
 
 4⋅ **Monitoring**
 
@@ -38,6 +42,7 @@ I will make sure your infrastructure can be regenerated with a click of a button
 
 Anything that can go wrong will be monitored and alerts setup, so we can start next step.
 
+---
 
 5⋅ **On-call support**
 
