@@ -11,8 +11,11 @@ published: true
 You write code. I automate your infrastructure.
 
 Are your customers the ones that tell you when your website is malfunctioning? 
+
 Does it take hours (if not days) to get a new server in production?
+
 You have a feeling that you are running more servers than you really need?
+
 
 **Let me fix that for you.**
 
@@ -28,13 +31,15 @@ No strings attached. You tell me what you want to achieve and I'll try to help.
 
 #### 2⋅ **Optimize Servers**
 
-Once we have a deal, I'll check your servers for vulnerabilities, performance and possible bottlenecks and problems.
+Once we have a deal, I'll check your servers for vulnerabilities, performance, possible bottlenecks and problems.
 
 ---
 
 #### 3⋅ **Setup Automation** 
 
-I will make sure your infrastructure can be regenerated with a click of a button. I use Ansible and CloudFormation to achieve this.
+I will make sure your infrastructure can be regenerated with a click of a button. I use Ansible and CloudFormation (when in AWS) to achieve this.
+
+Automation also can include setting up Continuous Integration and/or Deployments.
 
 ---
 
