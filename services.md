@@ -18,6 +18,8 @@ You have a feeling that you are running more servers than you really need?
 
 ## My zero to DevOps plan
 
+---
+
 #### 1⋅ **Review your operations [FREE]** 
 
 No strings attached. You tell me what you want to achieve and I'll try to help.
@@ -47,6 +49,8 @@ Anything that can go wrong will be monitored and alerts setup, so we can start n
 #### 5⋅ **On-call support**
 
 Sometimes things go wrong. Upon alerted I will make sure your services are back as soon as possible.
+
+---
 
 ## Pricing
 
