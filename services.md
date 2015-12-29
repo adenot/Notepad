@@ -10,12 +10,9 @@ published: true
 
 You write code. I automate your infrastructure.
 
-Are your customers the ones that tell you when your website is malfunctioning? 
-
-Does it take hours (if not days) to get a new server in production?
-
+Are your customers the ones that tell you when your website is malfunctioning? <br>
+Does it take hours (if not days) to get a new server in production? <br>
 You have a feeling that you are running more servers than you really need?
-
 
 **Let me fix that for you.**
 
