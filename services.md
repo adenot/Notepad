@@ -18,25 +18,25 @@ You have a feeling that you are running more servers than you really need?
 
 ## My zero to DevOps plan
 
-1⋅ **Review your operations [FREE]** 
+#### 1⋅ **Review your operations [FREE]** 
 
 No strings attached. You tell me what you want to achieve and I'll try to help.
 
 ---
 
-2⋅ **Optimize Servers**
+#### 2⋅ **Optimize Servers**
 
 Once we have a deal, I'll check your servers for vulnerabilities, performance and possible bottlenecks and problems.
 
 ---
 
-3⋅ **Setup Automation** 
+#### 3⋅ **Setup Automation** 
 
 I will make sure your infrastructure can be regenerated with a click of a button. I use Ansible and CloudFormation to achieve this.
 
 ---
 
-4⋅ **Monitoring**
+#### 4⋅ **Monitoring**
 
 > What gets measured gets improved
 
@@ -44,7 +44,7 @@ Anything that can go wrong will be monitored and alerts setup, so we can start n
 
 ---
 
-5⋅ **On-call support**
+#### 5⋅ **On-call support**
 
 Sometimes things go wrong. Upon alerted I will make sure your services are back as soon as possible.
 
