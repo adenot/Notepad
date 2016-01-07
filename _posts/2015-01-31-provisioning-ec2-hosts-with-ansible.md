@@ -20,6 +20,7 @@ Looking to build EC2 hosts with more consistency? Using Ansible you can easily p
 The easiest way to start is to create a playbook calling the *ec2* module with the parameters you want to pass to AWS to create your host. In this post I will show a little more scalable way to do this, where the parameters are variables and you can easily have multiple types of hosts sharing the same playbook and role.
 
 The solution is organized in 3 parts:
+
 1. A generic Ansible role that uses *ec2* module to provision
 2. Yaml files with variables that will be used as parameters for each type of EC2 host
 3. Playbook that combines the variables file with the role
