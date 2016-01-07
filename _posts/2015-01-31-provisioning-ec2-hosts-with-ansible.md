@@ -3,12 +3,17 @@ layout: post
 published: true
 title: Provisioning EC2 Hosts with Ansible
 mathjax: false
-featured: false
-comments: false
+featured: true
+comments: true
 categories: 
   - devops
 tags: ansible ec2 aws
+description: ""
+headline: ""
+modified: ""
+imagefeature: ""
 ---
+
 
 Looking to build EC2 hosts with more consistency? Using Ansible you can easily provision EC2 hosts and put some logic on it to adjust EC2 parameters based on the type of host you are building.
 
@@ -136,7 +141,7 @@ Create a playbook inside ansible playbooks root folder called *provision-ec2.yml
 {% endraw %}
 {% endhighlight %}
 
-Notice that the *{{type}}* variable above is not defined. Depending on the value of the parameter, Ansible will include different a variables file, thus populating the parameters used in the *provision-ec2* role.
+Notice that the *type* variable above is not defined. Depending on the value of the parameter, Ansible will include different a variables file, thus populating the parameters used in the *provision-ec2* role.
 
 The type will be defined at run time.
 
@@ -153,4 +158,3 @@ If your variables are correct, you should see a new host at your AWS console.
 All code is available at:
 
 [https://github.com/adenot/blog-ansible-provision-ec2](https://github.com/adenot/blog-ansible-provision-ec2)
-
