@@ -40,8 +40,6 @@ links:
     url: /categories
   - title: About Allan
     url: /about
-  - title: Managed Services
-    url: /services
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Australia/Sydney
